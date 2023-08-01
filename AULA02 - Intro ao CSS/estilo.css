@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+  }
+
+#menu{
+  height: 200px;
+  background-color: #464646;
+}
+
+.titulo{
+  color: #ff7f50;
+  font-weight: bold;
+  font-style: italic;
+  font-family: fantasy;
+
+}
+nav a{ /*Indica que a TAG A formatada deve estar dentro da tag NAV*/
+  color: white;
+} 
+
+/*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+nav{ 
+  margin: 30px;
+}
