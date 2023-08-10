@@ -1,0 +1,32 @@
+/*FORMATAÇÃO DE TAG */
+body{
+    background-color: black;
+    color: white;
+}
+/*FORMATAÇÃO DE ID */
+#titulo_principal{
+    font-size: 100px;
+    color: blueviolet;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.texto{
+    font-size: 60px;
+    text-align: center;
+    background-color: darkblue;
+}
+
+.caixa{
+    border: 2px solid greenyellow;  
+    background-color: pink;
+    color: black;
+    text-align: center;
+}
+
+.centralizar{
+    width: 100px;
+    height: auto;
+}
