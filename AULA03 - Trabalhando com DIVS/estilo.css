@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.nav-superior{
+    display: flex;
+}
+
+.botao{
+    width: 25%; /* LARGURA */
+    text-align: center; /* ALINHAMENTO DE TEXTO*/
+}
+
+.principal{
+    height: 100%; /*ALTURA */
+
+}
+.secaoA{
+    height: 50%;
+    background-color: gray;
+    display: flex;
+}
+.secaoB{
+    height: 50%;
+    background-color: beige;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; /*ROW = LINHA */
+    align-items: flex-end; /* VERTICAL? */
+    justify-content: flex-start;/* HORIZONTAL? */
+}
+.quadradinho{
+    height: 50px; /*ALTURA */
+    width: 50px; /*LARGURA */
+    background-color: yellow; /* COR DE FUNDO */
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid black;
+
+}
