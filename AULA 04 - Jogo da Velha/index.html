@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="estilo.css"/>
+
+</head>
+<body>
+    <div id="titulo">
+        <h1>JOGO DA VELHA</h1>
+        <p  id="status"></p>
+    </div>
+
+    <div id="principal">
+        <div class="placar">
+            <div class="jogador">RONAN</div>
+            <div class="resultado" id="r1">0</div>
+        </div>
+
+        <div class="jogo">
+            <div class="quadradinho" id="q1" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q2" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q3" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q4" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q5" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q6" onclick="mudaQuadradinho(this)"></div>
+            <div class="quadradinho" id="q7" ></div>
+            <div class="quadradinho" id="q8" ></div>
+            <div class="quadradinho" id="q9" ></div>
+
+        </div>
+
+        <div class="placar">
+            <div class="jogador">ADVERSÁRIO</div>
+            <div class="resultado" id="r2">0</div>
+        </div>    
+    </div>
+    
+    <script src="script.js" ></script>
+</body>
+</html>
