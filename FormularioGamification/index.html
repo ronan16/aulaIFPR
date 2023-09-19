@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="dom-particles.css">
+    <script src="dom-particles.js" defer></script>
+
+    <title>Formulário Gamificado</title>
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <h1>Bem vindo ao nosso primeiro Desafio!</h1>
+        <p>Preencha o formulário no menor tempo possível para conseguir uma boa pontuação. </p>
+        <div class="form-container">
+            <form id="game-form">
+                <div class="form-step" id="step-1">
+                    <h2>Passo 1</h2>
+                    <label for="field1">Qual seu nome?:</label>
+                    <input type="text" id="field1" required>
+                </div>
+                <div class="form-step" id="step-2">
+                    <h2>Passo 2</h2>
+                    <label for="field2">Qual seu email?:</label>
+                    <input type="text" id="field2" >
+                </div>
+                <div class="form-step" id="step-3">
+                    <h2>Parabéns!!!</h2>
+                    <p>Você finalizou o seu cadastro. Agora acesse seu email para validar e ganhar sua recompensa</p>
+                    <h4 id="final">Pontuação Final: </h4>
+                    <a href="#"><button>Entrar no sistema</button></a>
+                </div>
+                
+                <div onclick="createEmitter(event)">
+                    <button type="submit" onclick="changeColour('1D6DEC')" id="avancar">Próxima pergunta</button>
+                </div>
+            </form>
+        </div>
+        <div class="score">
+            <span>Pontuação: <span id="score">0</span></span>
+        </div>
+    </div>
+    <div id="particle_container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
