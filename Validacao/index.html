@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>    
+  
+    <!-- IMPEDE QUE O FORMULARIO SEJA ENVIADO-->
+    <form onsubmit="event.preventDefault()">
+        <div class="card">
+            <label for="nome">Nome do Cliente:</label>
+            
+            <input type="text" id="nome" 
+            oninput="validaNome()"/>
+ <label>Digite ao menos 2 nomes</label>
+
+
+            <button onclick="proximo()">Avançar</button>
+        </div>
+        <div class="card">
+            <label for="parte">Parte do corpo:</label>
+            <select id="parte" onfocusout="pontuar()">
+                <option>Cabeça</option>
+                <option>Braço Direito</option>
+                <option>Braço Esquerdo</option>
+                <option>Perna Direita</option>
+                <option>Perna Esquerda</option>
+                <option>Corpo</option>
+            </select>
+            <button onclick="anterior()">Voltar</button>
+
+            <button onclick="proximo()">Avançar</button>
+        </div>
+        
+        <div class="card">
+            <label for="powerranger">Nome do Power Ranger:</label>
+            <input type="text" id="powerranger" onfocusout="pontuar()"/>
+            <button onclick="anterior()">Voltar</button>
+
+            <button onclick="proximo()">Avançar</button>
+        </div>
+        <div class="card">
+            <label for="cor">Cor do componente:</label><br>
+            <div class="horizontal">
+                <label>
+                    <input type="radio" name="cor" value="Vermelho" checked/>
+                    Vermelho
+                </label>
+               
+                <label>
+                    <input type="radio" name="cor" value="Verde"/> 
+                    Verde
+                </label>
+                <label>
+                    <input type="radio" name="cor" value="Amarelo"/> 
+                    Amarelo
+                </label>
+                <label>
+                    <input type="radio" name="cor" value="Azul"/> 
+                    Azul
+                </label>
+                <label>
+                    <input type="radio" name="cor" value="Rosa"/> 
+                    Rosa
+                </label>
+            </div>
+         
+            <button onclick="anterior()">Voltar</button>
+
+            <button onclick="proximo()">Avançar</button>
+        </div>
+        <div class="card">
+            <label >Qual geração você é:</label>
+
+            <div class="horizontal">
+                <input type="checkbox" value="Classico" />Classico
+                <input type="checkbox" value="Nutella"/> Nutella
+            </div>
+            <button onclick="anterior()">Voltar</button>
+        </div>
+        
+     
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
