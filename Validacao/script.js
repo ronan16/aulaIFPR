@@ -45,17 +45,41 @@ function anterior() {
 6- TOMAR AS PROVIDÊNCIAS
 */
 
+// VAR JS    ===> CAMPO HTML
 let campoNome = document.getElementById("nome");
+let msgAlerta = document.getElementById("msgAlerta");
+let emoji = document.getElementById("emoji")
 
+msgAlerta.style.display = 'none'
+
+// STRING = VETOR
+// "ronan" <- length = 5
+// "01234" <- ultima posição = 4
 function validaNome(){
-    let texto = campoNome.value
-    let espaco = texto.indexOf(' ')
+    let texto = campoNome.value  //pega o que foi digitado no INPUT
+    let espaco = texto.indexOf(' ') // Função de string (divir, buscar, maiusculo)
 
+    // indexOf retorna um numero positivo quando acha o caractere (0...n)
+    // indexOf retorna -1 quando ele NÃO ACHA o valor buscado
     if( espaco != -1 && 
-        espaco!= 0 &&  
+        espaco != 0 &&  
         espaco != (texto.length-1) ){
-        console.log("ACHOU O ESPAÇO")
+        apagaMsg()
+        campoNome.style.backgroundColor = '#00FA9A'
+        emoji.src = "img/feliz.png"
+    } else{
+        mostraMsg()
+        emoji.src = "img/triste.png"
     }
+}
+
+function mostraMsg(){
+    msgAlerta.style.display = 'block'
+    campoNome.style.backgroundColor = '#F08080'
+}
+
+function apagaMsg(){
+    msgAlerta.style.display = 'none'
 }
 
 

@@ -10,10 +10,14 @@
     <form onsubmit="event.preventDefault()">
         <div class="card">
             <label for="nome">Nome do Cliente:</label>
-            
-            <input type="text" id="nome" 
-            oninput="validaNome()"/>
- <label>Digite ao menos 2 nomes</label>
+            <div style="display: flex;">
+                <input type="text" id="nome" 
+                oninput="validaNome()" onblur="apagaMsg()"/>
+
+                <img src="" style="width: 50px;" id="emoji"/>
+            </div>
+           
+        <label id="msgAlerta">Digite ao menos 2 nomes</label>
 
 
             <button onclick="proximo()">Avançar</button>
